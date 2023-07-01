@@ -1,0 +1,155 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body {
+
+    background-image: linear-gradient(to bottom left, #66ccff 0%, #33ccff 30%, #ccffff 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*Menu*/
+.Menu {
+    position: absolute;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.MenuNav {
+    background-color: #77ccff;
+    width: 300px;
+    height: 40px;
+    margin-left: -150px !important;
+    margin-top: 10px !important;
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav.MenuNav a {
+    text-align: center;
+    height: 40px;
+    width: 100px;
+
+    border-radius: 8px;
+
+
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav.MenuNav a:hover {
+
+    transition: 1s;
+    height: 55px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #99ccff;
+    font-size: 16px;
+
+}
+
+/*Texto da tela principal*/
+.Sobre {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    top: 35%;
+    left: 13%;
+    justify-content: left;
+    align-items: center;
+}
+
+.Sobreh1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+    line-height: 70px;
+
+}
+
+.Sobreh2 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+    line-height: 70px;
+}
+
+.Sobreh3 {
+    font-size: medium;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.Sobredivh3 {
+    position: relative;
+    width: 400px;
+    float: right;
+    right: 90px;
+    top: 10px;
+}
+
+p#Bem-Vindo {
+    line-height: 5px;
+    text-align: center;
+}
+
+
+/*Config Front-End*/
+#Front-end {
+    animation: FrontAnimacao 4s infinite;
+}
+
+
+/*Animacao Front-end*/
+@keyframes FrontAnimacao {
+
+    0%,
+    100% {
+        color: #ccffff;
+    }
+
+    50% {
+        color: #66ccff;
+    }
+
+}
+
+/*Imagem pagina principal*/
+.ImagemPrincipal {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+
+img.Foto1 {
+    width: 360px;
+    height: 610px;
+    margin-top: -300px !important;
+    border-radius: 6px;
+}
+
+img.Foto1:hover {
+    box-shadow: 0 14px 18px 0 #ccffff;
+}
+
