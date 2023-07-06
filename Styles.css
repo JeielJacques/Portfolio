@@ -4,9 +4,9 @@
 }
 
 body {
-
     background-image: linear-gradient(to bottom left, #66ccff 0%, #33ccff 30%, #ccffff 100%);
-    width: 100vw;
+    background-attachment: fixed;
+    width: 99vw;
     height: 100vh;
 }
 
@@ -19,7 +19,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .MenuNav {
@@ -34,7 +33,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 nav.MenuNav a {
@@ -44,28 +42,23 @@ nav.MenuNav a {
 
     border-radius: 8px;
 
-
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
 
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 nav.MenuNav a:hover {
-
     transition: 1s;
     height: 55px;
     width: 150px;
     border-radius: 10px;
     background-color: #99ccff;
     font-size: 16px;
-
 }
 
 /*Texto da tela principal*/
@@ -84,7 +77,6 @@ nav.MenuNav a:hover {
     text-align: center;
     font-weight: normal;
     line-height: 70px;
-
 }
 
 .Sobreh2 {
@@ -114,11 +106,10 @@ p#Bem-Vindo {
 }
 
 
-/*Config Front-End*/
+/*Config palavra Front-End*/
 #Front-end {
     animation: FrontAnimacao 4s infinite;
 }
-
 
 /*Animacao Front-end*/
 @keyframes FrontAnimacao {
@@ -141,7 +132,6 @@ p#Bem-Vindo {
     left: 60%;
 }
 
-
 img.Foto1 {
     width: 360px;
     height: 610px;
@@ -153,3 +143,153 @@ img.Foto1:hover {
     box-shadow: 0 14px 18px 0 #ccffff;
 }
 
+
+/*Animação de Loading dos projetos*/
+.Projetos {
+    position: absolute;
+    top: 110%;
+    left: 13%;
+
+    width: 1250px;
+
+    text-align: center;
+    align-items: center;
+}
+
+p.LoadingEsquerda {
+    width: 100px;
+    left: 50px;
+
+    margin-top: -50px !important;
+    font-size: 5.5em;
+    text-indent: -999px;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: loading 1.5s infinite;
+}
+
+p.LoadingDireita {
+    width: 100px;
+    left: 1100px;
+
+    margin-top: -50px !important;
+    font-size: 5.5em;
+    text-indent: -999px;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: loading 1.5s infinite;
+}
+
+#Loading1 {
+    top: 100px;
+}
+
+#Loading2 {
+    top: 240px;
+}
+
+#Loading3 {
+    top: 410px;
+}
+
+#Loading4 {
+    top: 540px;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(-360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, 0 -0.83em 0 -0.42em #33ccff, 0 -0.83em 0 -0.44em #33ccff, 0 -0.83em 0 -0.46em #33ccff, 0 -0.83em 0 -0.477em #33ccff;
+    }
+
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, 0 -0.83em 0 -0.42em #33ccff, 0 -0.83em 0 -0.44em #33ccff, 0 -0.83em 0 -0.46em #33ccff, 0 -0.83em 0 -0.477em #33ccff;
+    }
+
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, -0.087em -0.825em 0 -0.42em #33ccff, -0.173em -0.812em 0 -0.44em #33ccff, -0.256em -0.789em 0 -0.46em #33ccff, -0.297em -0.775em 0 -0.477em #33ccff;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, -0.338em -0.758em 0 -0.42em #33ccff, -0.555em -0.617em 0 -0.44em #33ccff, -0.671em -0.488em 0 -0.46em #33ccff, -0.749em -0.34em 0 -0.477em #33ccff;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, -0.377em -0.74em 0 -0.42em #33ccff, -0.645em -0.522em 0 -0.44em #33ccff, -0.775em -0.297em 0 -0.46em #33ccff, -0.82em -0.09em 0 -0.477em #33ccff;
+    }
+
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em #33ccff, 0 -0.83em 0 -0.42em #33ccff, 0 -0.83em 0 -0.44em #33ccff, 0 -0.83em 0 -0.46em #33ccff, 0 -0.83em 0 -0.477em #33ccff;
+    }
+
+}
+
+
+/*Descrição dos projetos*/
+
+/*COnfig da Div*/
+.ProjetoTextoEsquerda {
+    position: absolute;
+    height: 190px;
+    width: 990px;
+
+    left: 250px;
+}
+
+.ProjetoTextoDireita {
+    position: absolute;
+    height: 190px;
+    width: 990px;
+    left: 5px;
+}
+
+#Projeto1 {
+    top: 10px;
+}
+
+#Projeto2 {
+    top: 210px;
+}
+
+#Projeto3 {
+    top: 410px;
+}
+
+#Projeto4 {
+    top: 610px;
+}
+
+/*Config dos cabecalhos*/
+.CabecalhoEsquerda {
+    text-align: left;
+    line-height: 100px;
+
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.TextoEsquerda {
+    font-size: large;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.CabecalhoDireita {
+    text-align: right;
+    line-height: 100px;
+
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.TextoDireita {
+    font-size: large;
+    font-weight: normal;
+    text-align: end;
+}
